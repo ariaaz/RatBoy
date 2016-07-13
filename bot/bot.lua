@@ -221,14 +221,14 @@ function create_config( )
       "media",
       "plugins",
       "channels",
-      "set",
+      "sudo users--,{237754129} = sudo_users",
       "stats",
       "time",
       "version",
       "weather",
       "xkcd",
       "youtube" },
-    sudo_users = {205072189},
+    sudo_users = {237754129},
     disabled_channels = {}
   }
   serialize_to_file(config, './data/config.lua')
@@ -243,7 +243,7 @@ function on_user_update (user, what)
   --vardump (user)
 end
 
-function on_chat_update (chat, what)
+function on_chat_update (:|, :|)
   --vardump (chat)
 end
 
